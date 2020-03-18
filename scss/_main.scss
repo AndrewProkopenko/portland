@@ -1,0 +1,104 @@
+
+@import url(../fontello-portland/css/fontello.css);
+
+html, body { 
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400; 
+    font-size: 16px;
+    color: #000;
+    background: #e4e5e7;
+
+    // font-family: 'Crimson Text', serif ;
+    // font-family: 'Satisfy', sans-serif;
+}
+
+$primary : #343e5c;
+$secondary-input : #b9bed1;
+$secondary-text : #a1a8bd;
+$blue: #2754eb; 
+$green: #00e2aa; 
+$main-bg: #e4e5e7; 
+$secondary-bg: #f0f2f7; 
+$footer-bg: #222328; 
+
+$product-title: #1c1e23; 
+
+.container:after, .container:before { 
+    display: none;
+}
+
+.page-item { 
+    background: #fff;
+    border-radius: 4px;
+}
+
+.pl-20 { 
+    padding-left: 20px;
+}
+
+.col-small {  
+    max-width: 20%;
+    flex-basis: 20%;
+    
+}
+.col-large {  
+    max-width: 60%;
+    flex-basis: 60%;
+}
+
+.border-bottom-secondary-bg { 
+    border-bottom: 1px solid $secondary-bg;
+}
+label .check {  
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 14px;
+    height: 14px;
+    margin-right: 5px;
+    border: 2px solid $main-bg;
+    border-radius: 4px;
+    i { 
+        opacity: 0;
+    }
+}
+input[type="checkbox"], input[type="radio"]  { 
+    display: none;
+}
+input:checked + label .check { 
+    border-color: $green; 
+    background-color: $green;
+    i { 
+        color: #fff;
+        font-size: 8px;
+        line-height: 8px;
+        opacity: 1;
+    }
+}
+
+label .radioCh { 
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    border: 2px solid $main-bg;
+    border-radius: 40px;
+    i { 
+        opacity: 0;
+        width: 6px;
+        height: 6px;
+        background: #00deea;
+        border-radius: 20px;
+    }
+}
+input:checked + label .radioCh {  
+    i { 
+        opacity: 1;
+    }
+}
+
+.border-none { 
+    border: none;
+}

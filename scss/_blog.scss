@@ -1,0 +1,50 @@
+.blog-container { 
+    margin-top: 50px;
+    padding: 75px 0;
+    h2 { 
+        color: $footer-bg;
+        font-weight: 700;
+        font-size: 18px;
+        text-align: center;
+    }
+    h3 { 
+        color: #cacedc;
+        font-family: 'Crimson Text', serif;
+        font-size: 12px;
+        font-style: italic;
+        text-align: center;
+    }
+    .item { 
+        padding-top: 30px;
+        .person { 
+            display: flex;
+            align-items: center;
+            img { 
+                border-radius: 100px;
+            }
+            >div { 
+                display: flex; 
+                flex-direction: column;
+                padding-left: 15px;
+                span { 
+                    font-size: 10px;
+                    &:first-child { 
+                        color: $primary;
+                        font-weight: 600;
+                    }
+                    &:last-child { 
+                        color: #cacedc;
+                        font-family: 'Crimson Text', serif;
+                        font-style: italic;
+                    }
+                }
+            }
+        }
+        .text { 
+            font-size: 12px;
+            padding: 10px 0;
+            color: $primary;
+            font-family: 'Crimson Text', serif;
+        }
+    }
+}

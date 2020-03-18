@@ -1,0 +1,158 @@
+.column-setting { 
+
+    font-size: 10px;
+    .card-portland {   
+        .card-header-portland { 
+            border-bottom: 1px solid $secondary-bg;
+            h2 { 
+                font-size: inherit;
+                display: flex;
+                align-items: center;
+                position: relative; 
+                i { 
+                    position: absolute;
+                    z-index: 21;
+                    top: calc(50% - 7px);
+                    right: 10px;
+                    font-size: 15px; 
+                    color: $secondary-input;
+                }
+            }
+            .btn-portland { 
+                position: relative;
+                z-index: 22;
+                text-align: left;
+                width: 100%;
+                padding: 15px 20px;
+                font-size: 10px;
+                font-weight: 600;
+                color : $primary; 
+                cursor: pointer;
+                border: none;
+                outline: none;
+                background: none;
+            }
+        }
+        .card-body-portland { 
+            background: $secondary-bg;
+            ul { 
+                margin: 0;
+                padding: 0;
+                li { 
+                    list-style: none;
+                    a { 
+                        font-size: 8px;
+                        font-weight: 600;
+                        display: inline-block;
+                        width: 100%;
+                        color: $secondary-text;
+                        padding: 15px 20px;
+                        text-transform: uppercase;
+                        border-bottom: 1px solid #dfe4ee;
+                        transition: 300ms ease;
+                        &:hover { 
+                            text-decoration: none;
+                            color: $primary;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .title-item { 
+        width: 100%;
+        padding: 15px 20px;
+        font-size: 10px;
+        font-weight: 600;
+        color : $primary; 
+        text-transform: uppercase;
+    }
+    .title-item-flex { 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        div:last-child {  
+            color: $blue;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    }
+    .item-set { 
+        padding: 12px 16px;
+        ul { 
+            margin: 0;
+            padding: 0;
+            li {  
+                >div { 
+                    white-space: nowrap;
+                } 
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 10px;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+                list-style: none;
+                label { 
+                    font-weight: 600;
+                    margin: 0;
+                    padding-left: 5px;
+                    padding-right: 5px;
+                    color: $primary;
+                }
+                .counter {  
+                    font-weight: 600;
+                    color: $secondary-input;
+                }
+            }
+        }
+       
+    }
+}
+
+.delivery { 
+    text-transform: uppercase;
+    font-weight: 600;
+    color: $primary;
+
+    display: flex;
+    // justify-content: space-between;
+    align-items: center;
+    >div { 
+        display: flex;
+        align-items: center;
+        flex-basis: 50%;
+        padding-left: 10px;
+        border-right: 1px solid #dfe4ee;
+        &:last-child { 
+            border: none;
+        }
+        label { 
+            margin: 0;
+            padding-left: 5px;
+        }
+    }
+}
+
+#setting_col { 
+  font-size: 12px;
+  text-transform: capitalize;
+  font-weight: 600;
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  cursor: pointer;
+  color: $primary;
+  background-color: lighten($blue, 25%) ;
+  display: none;
+}
+.column-setting-height {   
+    height: auto;
+}
+
+.radio-btn label { 
+    display: flex;
+    align-items: center;
+}
